@@ -1,6 +1,6 @@
 <?php
 if(isset($_POST["u"]) && isset($_POST["p"])){
-	if($_POST["u"]=="admin" && $_POST["p"]=''){
+	if($_POST["u"]=="admin" && $_POST["p"]='admin'){
 		session_start();
 		$_SESSION["username"]="admin";
 		header("location:membership.php");
